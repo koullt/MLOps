@@ -1,20 +1,20 @@
 mlops_deploy
 ==============================
 
-Criação de uma API utilizando Flask para utilizar Modelos de Machine Learning criados.
+Criação de uma API utilizando Flask para utilizar Modelos de Machine Learning criados || 
 Aqui você vai poder visualizar:
 
--Como criar novos endpoints.
--Como fazer análise de sentimento usando TextBlob.
--Criar um endpoint com uma análise de sentimento.
--Treinar um modelo com a base House Pricing.
--Como colocar um modelo de machine learning em uma API.
--Como criar um endpoint para receber chamadas POST.
--Como fazer uma chamada POST
--Como gravar um modelo em um arquivo.
--Como proteger um endpoint com login e senha.
--Como fazer uma chamada HTTP com uma autenticação básica.
--Como usar o Requests para consumir API’s
+Como criar novos endpoints, 
+Como fazer análise de sentimento usando TextBlob, 
+Criar um endpoint com uma análise de sentimento, 
+Treinar um modelo com a base House Pricing, 
+Como colocar um modelo de machine learning em uma API, 
+Como criar um endpoint para receber chamadas POST, 
+Como fazer uma chamada POST, 
+Como gravar um modelo em um arquivo, 
+Como proteger um endpoint com login e senha, 
+Como fazer uma chamada HTTP com uma autenticação básica, 
+Como usar o Requests para consumir API’s.
 
 Project Organization
 ------------
