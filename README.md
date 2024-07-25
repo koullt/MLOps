@@ -2,54 +2,68 @@ mlops_deploy
 ==============================
 
 Criação de uma API utilizando Flask para utilizar Modelos de Machine Learning criados.
+Aqui você vai poder visualizar:
+
+-Como criar novos endpoints.
+-Como fazer análise de sentimento usando TextBlob.
+-Criar um endpoint com uma análise de sentimento.
+-Treinar um modelo com a base House Pricing.
+-Como colocar um modelo de machine learning em uma API.
+-Como criar um endpoint para receber chamadas POST.
+-Como fazer uma chamada POST
+-Como gravar um modelo em um arquivo.
+-Como proteger um endpoint com login e senha.
+-Como fazer uma chamada HTTP com uma autenticação básica.
+-Como usar o Requests para consumir API’s
 
 Project Organization
 ------------
-
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── Makefile           <- Makefile com comandos como `make data` ou `make train`
+    ├── README.md          <- O README de nível superior para desenvolvedores que usam este projeto.
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── external       <- Dados de fontes de terceiros.
+    │   ├── interim        <- Dados intermediários que foram transformados.
+    │   ├── processed      <- Conjuntos de dados finais, canônicos, para modelagem.
+    │   └── raw            <- O dump de dados original e imutável.
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── docs               <- Um projeto padrão do Sphinx; veja sphinx-doc.org para detalhes
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── models             <- Modelos treinados e serializados, modelos (Sentimento " Para análise de sentimento" e Cotacao "Para análise de preço das casas") 
+    │                         Foi convertido em sav, utilizando a biblíoteca Pickle para o código main da API não ficar tão extenso.
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── notebooks          <- Notebooks Jupyter. 
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── references         <- Dicionários de dados, manuais e todos os outros materiais explicativos.
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── reports            <- Análises geradas como HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Gráficos e figuras gerados para serem usados nos relatórios
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── requirements.txt   <- O arquivo de requisitos para reproduzir o ambiente de análise, por exemplo,
+    │                         gerado com `pip freeze > requirements.txt`
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
+    ├── setup.py           <- Torna o projeto instalável via pip (pip install -e .) para que o src possa ser importado
+    ├── src                <- Código-fonte para uso neste projeto
+    │   ├── App            <- Pasta com os códigos da aplicação
+        └── main.py        <- código main da API para rodar
+    │   ├── __init__.py    <- Torna src um módulo Python
     │   │
-    │   ├── data           <- Scripts to download or generate data
+    │   ├── data           <- Scripts para baixar ou gerar dados
     │   │   └── make_dataset.py
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   ├── features       <- Scripts para transformar dados brutos em recursos para modelagem
     │   │   └── build_features.py
     │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
+    │   ├── models         <- Scripts para treinar modelos e depois usar modelos treinados para fazer
+    │   │   │                 previsões
+    │   │   ├── model.sav
+    │   │   
     │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │   └── visualization  <- Scripts para criar visualizações exploratórias e orientadas a resultados
     │       └── visualize.py
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── tox.ini            <- Arquivo tox com configurações para executar tox; veja tox.readthedocs.io
+
 
 
 --------
